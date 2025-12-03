@@ -35,7 +35,7 @@ def download_theme(show_name, output_path):
     Searches and downloads the audio theme from YouTube with a dynamic duration filter.
     """
     # Optimized search query to target intro themes
-    search_query = f"{show_name} ost opening"
+    search_query = f"{show_name} ost opening intro"
     print(f"   ⬇️ Searching: '{show_name}' (max {MAX_DURATION}s)...")
 
     ydl_opts = {
