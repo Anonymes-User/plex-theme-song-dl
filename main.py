@@ -46,6 +46,7 @@ def download_theme(show_name, output_path):
         'quiet': True,
         'default_search': 'ytsearch1',
         'extractor-args': 'youtube:player_client=default',
+        'no-warnings': True,
         # Duration filter using the dynamic MAX_DURATION variable
         'match_filter': yt_dlp.utils.match_filter_func(f"duration < {MAX_DURATION}"),
         'postprocessors': [{
